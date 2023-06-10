@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function shirt(a){
+                var pic;
+                if(a==0){
+                    pic = "blue.jpg"
+                }
+                else{
+                    pic = "grey.jpg"
+                }
+                document.getElementById("myImage").src = pic
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <img id="myImage" src="blue.jpg" width="150">
+            <br>
+            <button type="button" onclick="shirt(0)">Blue Shirt</button>
+            <button type="button" onclick="shirt(1)">Grey Shirt</button>
+        </center>
+    </body>
+</html>
